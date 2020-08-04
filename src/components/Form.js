@@ -1,10 +1,11 @@
 import React from "react";
 import Feature from "./Feature.js";
+import FEATURES from "./FEATURES.js"
 
 export default function Form(props) {
-  const featureItems = Object.keys(props.features).map((feature, idx) => {
+  const featureItems = Object.keys(FEATURES).map((feature, idx) => {
     const featureHash = feature + "-" + idx;
-    const options = props.features[feature];
+    const options = FEATURES[feature];
     return (
       <Feature
         key={featureHash}

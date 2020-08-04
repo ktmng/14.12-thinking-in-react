@@ -6,7 +6,6 @@ export default function Main(props) {
   return (
     <main>
       <Form
-        features={props.features}
         selected={props.selected}
         onUpdateFeature={props.onUpdateFeature}
       />
