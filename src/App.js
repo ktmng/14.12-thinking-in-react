@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Header from "./components/Header.js";
 import Main from "./components/Main.js";
-// Normalizes string as a slug - a string that is safe to use
-// in both URLs and html attributes
 import "./App.css";
 
 class App extends Component {
@@ -40,7 +38,6 @@ class App extends Component {
       <div className="App">
         <Header />
         <Main
-          features={this.props.features}
           selected={this.state.selected}
           onUpdateFeature={this.updateFeature}
         />
